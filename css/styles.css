@@ -359,12 +359,12 @@ footer{
     margin-bottom: 20px;
     min-width: 173px;
 }
-.del-pay-main{
+.delivery-questions-article-main{
     display: flex;
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.del-pay-main>aside{
+.delivery-questions-article-main>aside{
     margin-right: 55px;
     min-width: 175px;
 }
@@ -373,12 +373,12 @@ footer{
     font-size: 16px;
     line-height: 19.5px;
 }
-.sidebar-list>li:first-child>a,
+.focus-color>a,
 .bread-crumbs>li:last-child>a{
     color: var(--third-accent-color);
     position: relative;
 }
-.sidebar-list>li:first-child::after{
+.focus-color>a:after{
     content: " ";
     display: block;
     position: absolute;
@@ -412,7 +412,7 @@ footer{
 .bread-crumbs>li:first-child>a:after{
     display: none;
 }
-.deliv-hero-text{
+.delivery-questions-article-hero{
     font-size: 48px;
     line-height: 58.51px;
     margin-top: 20px;
@@ -423,3 +423,75 @@ footer{
     line-height: 32px;
     margin-top: 40px;
 }
+.accordion{
+    max-width: 880px;
+
+}
+.tab input,
+.tab-content {
+    display: none;
+}
+
+.tab {
+    font-size: 16px;
+    line-height: 30px;
+    border-top: 1px solid #E0E0E0;
+    /* Параметры рамки */
+    color: #828282;
+    /* Цвет текста */
+
+}
+.tab-border{
+    border-bottom: 1px solid #E0E0E0;
+}
+.tab-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* Поля вокруг текста */
+    display: block;
+    /* Блочный элемент */
+    color: #000000;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    /* Жирное начертание */
+    cursor: pointer;
+    /* Вид курсора */
+    position: relative;
+    padding-right: 215px;
+}
+
+.tab-title::after {
+    content: ' ';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 46%;
+    right: 0;
+    /* Размещаем по правому краю */
+}
+
+.tab-content {
+    padding-bottom: 40px;
+    /* Поля вокруг текста */
+}
+
+.tab :hover+.tab-title {
+    color: #2F80ED;
+    /* Цвет текста */
+}
+
+.tab :checked+.tab-title::after {
+    transform: rotate(-135deg);
+    top: 60%;
+}
+.tab :checked+.tab-title{
+    padding-bottom: 20px;
+}
+.tab :checked~.tab-content {
+    display: block;
+}   /* Показываем содержимое */
