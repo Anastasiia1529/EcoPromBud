@@ -423,3 +423,19 @@ footer{
     line-height: 32px;
     margin-top: 40px;
 }
+.objects-title{
+    font-size: 36px;
+    line-height: 43.88px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.objects-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.objects-list>li{
+    padding: 40px;
+}
+.work-list{
+    max-width: 542px;
+}
