@@ -46,7 +46,7 @@ header{
 }
 .logo{
     margin-top: 10px;
-    margin-left: 152px;
+    margin-left: 97px;
     margin-right: 102px;
 }
 .header-contacts{
@@ -102,12 +102,17 @@ header{
     height: 50px;
     position: absolute;
     left: 0;
-    transform: translateY(2
-    px);
+    transform: translateY(2px);
 }
 .tel-mail>a{
     display: block;
     margin-bottom: 5px;
+}
+.tel-mail>a:first-child{
+    font-weight: 600;
+}
+.tel-mail>a:last-child{
+    color: #BDBDBD;
 }
 .hero{
     display: flex;
