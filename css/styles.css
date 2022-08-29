@@ -46,8 +46,8 @@ header{
 }
 .logo{
     margin-top: 10px;
-    margin-left: 97px;
-    margin-right: 102px;
+    margin-left: 152px;
+    margin-right: 180px;
 }
 .header-contacts{
     display: flex;
@@ -86,33 +86,6 @@ header{
     background-image: url(../img/card.png);
     position: absolute;
     transform: translateX(-32px);
-}
-.tel-mail{
-    margin-top: 15px;
-    font-size: 16px;
-    line-height: 17px;
-    position: relative;
-    padding-left: 60px;
-}
-.tel-mail::before{
-    content: " ";
-    display: block;
-    background-image: url(../img/phone.png);
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    left: 0;
-    transform: translateY(2px);
-}
-.tel-mail>a{
-    display: block;
-    margin-bottom: 5px;
-}
-.tel-mail>a:first-child{
-    font-weight: 600;
-}
-.tel-mail>a:last-child{
-    color: #BDBDBD;
 }
 .hero{
     display: flex;
@@ -386,12 +359,12 @@ footer{
     margin-bottom: 20px;
     min-width: 173px;
 }
-.delivery-questions-article-main{
+.del-pay-main{
     display: flex;
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.delivery-questions-article-main>aside{
+.del-pay-main>aside{
     margin-right: 55px;
     min-width: 175px;
 }
@@ -400,12 +373,12 @@ footer{
     font-size: 16px;
     line-height: 19.5px;
 }
-.focus-color>a,
+.sidebar-list>li:first-child>a,
 .bread-crumbs>li:last-child>a{
     color: var(--third-accent-color);
     position: relative;
 }
-.focus-color>a:after{
+.sidebar-list>li:first-child::after{
     content: " ";
     display: block;
     position: absolute;
@@ -439,7 +412,7 @@ footer{
 .bread-crumbs>li:first-child>a:after{
     display: none;
 }
-.delivery-questions-article-hero{
+.deliv-hero-text{
     font-size: 48px;
     line-height: 58.51px;
     margin-top: 20px;
@@ -450,75 +423,74 @@ footer{
     line-height: 32px;
     margin-top: 40px;
 }
-.accordion{
-    max-width: 880px;
-
+.objects-main{
+    margin-top: 30px;
 }
-.tab input,
-.tab-content {
+.objects-title{
+    font-size: 36px;
+    line-height: 43.88px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.objects-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.objects-list>li{
+    padding: 40px;
+    margin-bottom: 35px;
+    position: relative;
+}
+.objects-list>li:hover>.objects-button{
+    display: block;
+}
+.objects-button{
+    position: absolute;
+    background-color: #D6E9FF;
+    color: #2F80ED;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19.5px;
     display: none;
 }
-
-.tab {
+.objects-list>li:nth-child(even){
+    margin-left: 35px;
+}
+.objects-list>li>h2{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.objects-list>li>p{
+    color: #BDBDBD;
+    font-size: 16px;
+    line-height: 19.5px;
+    margin-bottom: 30px;
+}
+.work-list{
+    width: 542px;
     font-size: 16px;
     line-height: 30px;
-    border-top: 1px solid #E0E0E0;
-    /* Параметры рамки */
-    color: #828282;
-    /* Цвет текста */
-
 }
-.tab-border{
-    border-bottom: 1px solid #E0E0E0;
-}
-.tab-title {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    /* Поля вокруг текста */
-    display: block;
-    /* Блочный элемент */
-    color: #000000;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: bold;
-    /* Жирное начертание */
-    cursor: pointer;
-    /* Вид курсора */
+.work-list>li{
+    margin-bottom: 15px;
+    padding-left: 30px;
     position: relative;
-    padding-right: 215px;
 }
-
-.tab-title::after {
-    content: ' ';
-    display: block;
-    width: 7px;
-    height: 7px;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    transform: rotate(45deg);
+.work-list>li::before{
+    top: 25%;
+    left: 0%;
     position: absolute;
-    top: 46%;
-    right: 0;
-    /* Размещаем по правому краю */
-}
-
-.tab-content {
-    padding-bottom: 40px;
-    /* Поля вокруг текста */
-}
-
-.tab :hover+.tab-title {
-    color: #2F80ED;
-    /* Цвет текста */
-}
-
-.tab :checked+.tab-title::after {
-    transform: rotate(-135deg);
-    top: 60%;
-}
-.tab :checked+.tab-title{
-    padding-bottom: 20px;
-}
-.tab :checked~.tab-content {
+    content: " ";
     display: block;
-}   /* Показываем содержимое */
+    width: 13px;
+    height: 8px;
+    border-left: 2px solid #27AE60;
+    border-bottom: 2px solid #27AE60;
+    transform: rotate(-45deg);
+}
